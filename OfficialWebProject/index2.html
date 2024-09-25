@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      table {
+        width: 80%; /* sets the width of the table to 80% of the container */
+        margin: 20px; /* add margin around the table */
+        border-collapse: collapse; /* collapses borders into a single border */
+        text-align: left; /* aligns text to the left */
+        background-color: white; /* background color for the table */
+      }
+
+      /* styles table elements */
+      table,
+      th,
+      td {
+        border: 1px solid grey; /* adds a grey border to the table, headers, and cells */
+        padding: 10px; /* add padding inside cells */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CPU and GPU Information</h1>
+      <!-- main title of the page -->
+    </header>
+
+    <main>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <!-- table header for feature names -->
+              <th>iPhone 15 Pro Max</th>
+              <!-- table header for iPhone details -->
+              <th>Samsung S24 Ultra</th>
+              <!-- table header for Samsung details -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CPU</td>
+              <!-- row for CPU information -->
+              <td>Apple A17 Pro (3 nm, hexa-core)</td>
+              <!-- iPhone CPU details -->
+              <td>Qualcomm Snapdragon 8 Gen 3 (4 nm)</td>
+              <!-- samsung CPU details -->
+            </tr>
+            <tr>
+              <td>Single-Core Performance</td>
+              <!-- row for single-core performance -->
+              <td>32% higher than S24 Ultra (Geekbench 6)</td>
+              <!-- iPhone performance -->
+              <td>Lower than iPhone 15 Pro Max</td>
+              <!-- samsung performance -->
+            </tr>
+            <tr>
+              <td>GPU</td>
+              <!-- Row for GPU information -->
+              <td>Adreno 750 (1 GHz)</td>
+              <!-- iPhone GPU details -->
+              <td>Apple GPU (6-core graphics)</td>
+              <!-- samsung GPU details -->
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <article>
+        <p>
+          The iPhone 15 Pro Max, with its Apple A17 Pro chip, excels in
+          single-core performance and efficiency thanks to its advanced 3 nm
+          process and custom high-performance cores. Meanwhile, the Samsung
+          Galaxy S24 Ultra, powered by the <u>Qualcomm Snapdragon 8 Gen 3</u>,
+          offers strong multi-core and GPU performance, particularly in
+          graphics-intensive tasks, due to its 8-core architecture and
+          <i>Adreno 750 GPU</i>. <strong>Both</strong>
+          devices are top-tier, but they shine in different areas depending on
+          the specific use case.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <h2>Contact Us</h2>
+      <!-- subheading for contact section -->
+      <form>
+        <label for="name">Name:</label>
+        <!-- label for name input -->
+        <input type="text" id="name" name="name" required />
+        <!-- name input field -->
+
+        <label for="email">Email:</label>
+        <!-- label for email input -->
+        <input type="email" id="email" name="email" required />
+        <!-- email input field -->
+
+        <label for="color">Favorite iPhone Color:</label>
+        <!-- label for color input -->
+        <input type="color" id="color" name="color" />
+        <!-- color picker input -->
+
+        <label>
+          <input type="checkbox" id="subscribe" name="subscribe" />
+          <!-- checkbox for newsletter subscription -->
+          Subscribe to our newsletter
+        </label>
+
+        <button type="submit">Submit</button>
+        <!-- submit button -->
+      </form>
+
+      <br />
+
+      <img src="goat.png" <!-- Image of an Apple product -- />
+      style="width: 300px; height: 200px" title="Credit: Sergei Gussev"
+      <!-- title attribute for the image -->
+      alt="Apple" />
+      <!-- alt text for the image -->
+
+      <a href="index.html">Previous Text</a>
+      <!-- link to the previous page -->
+    </footer>
+  </body>
+</html>
